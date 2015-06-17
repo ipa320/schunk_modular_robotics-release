@@ -1,35 +1,17 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(schunk_sdhx)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  control_msgs
   roslib
-  rospy
+  std_srvs
   sensor_msgs
+  control_msgs
 )
-
-
-#######################################
-## Declare ROS messages and services ##
-#######################################
-
-
-###################################
-## catkin specific configuration ##
-###################################
 
 catkin_package(
-    CATKIN_DEPENDS rospy control_msgs roslib sensor_msgs# TODO
-    INCLUDE_DIRS # TODO include
-    LIBRARIES # TODO
+    CATKIN_DEPENDS rospy roslib std_srvs sensor_msgs control_msgs
 )
 
-#############
-## Install ##
-#############
 
 ## Mark executables and/or libraries for installation
 install(TARGETS 
