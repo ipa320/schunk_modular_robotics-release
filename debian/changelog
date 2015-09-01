@@ -1,0 +1,88 @@
+ros-indigo-schunk-modular-robotics (0.6.6-0trusty) trusty; urgency=high
+
+
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Mon, 31 Aug 2015 22:00:00 -0000
+
+ros-indigo-schunk-modular-robotics (0.6.5-0trusty) trusty; urgency=high
+
+
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Sun, 30 Aug 2015 22:00:00 -0000
+
+ros-indigo-schunk-modular-robotics (0.6.4-0trusty) trusty; urgency=high
+
+  * migration to package format 2
+  * remove trailing whitespaces
+  * review dependencies
+  * Contributors: ipa-fxm
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Mon, 24 Aug 2015 22:00:00 -0000
+
+ros-indigo-schunk-modular-robotics (0.6.3-0trusty) trusty; urgency=high
+
+
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Tue, 16 Jun 2015 22:00:00 -0000
+
+ros-indigo-schunk-modular-robotics (0.6.2-0trusty) trusty; urgency=high
+
+  * Merge branch 'indigo_dev' into indigo_release_candidate
+  * sdhx tested
+  * Contributors: Florian Weisshardt, ipa-nhg
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Sun, 14 Dec 2014 23:00:00 -0000
+
+ros-indigo-schunk-modular-robotics (0.6.1-0trusty) trusty; urgency=high
+
+
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Sun, 21 Sep 2014 22:00:00 -0000
+
+ros-indigo-schunk-modular-robotics (0.6.0-0trusty) trusty; urgency=high
+
+
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Wed, 17 Sep 2014 22:00:00 -0000
+
+ros-indigo-schunk-modular-robotics (0.5.6-0trusty) trusty; urgency=high
+
+
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Tue, 26 Aug 2014 22:00:00 -0000
+
+ros-indigo-schunk-modular-robotics (0.5.5-0trusty) trusty; urgency=high
+
+  * Merge pull request #81 <https://github.com/ipa320/schunk_modular_robotics/issues/81> from ipa320/hydro_release_candidate
+    bring back changes from Hydro release candidate
+  * New maintainer
+  * Contributors: Nadia Hammoudeh García, ipa-nhg
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Mon, 25 Aug 2014 22:00:00 -0000
+
+ros-indigo-schunk-modular-robotics (0.5.4-0trusty) trusty; urgency=high
+
+
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Thu, 27 Mar 2014 23:00:00 -0000
+
+ros-indigo-schunk-modular-robotics (0.5.3-0trusty) trusty; urgency=high
+
+
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Wed, 26 Mar 2014 23:00:00 -0000
+
+ros-indigo-schunk-modular-robotics (0.5.2-0trusty) trusty; urgency=high
+
+
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Wed, 26 Mar 2014 23:00:00 -0000
+
+ros-indigo-schunk-modular-robotics (0.5.1-0trusty) trusty; urgency=high
+
+  * Initial catkinization. Still a linking error in sdh lib.
+  * Contributors: abubeck
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Wed, 19 Mar 2014 23:00:00 -0000
+
+
