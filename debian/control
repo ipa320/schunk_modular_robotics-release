@@ -1,0 +1,12 @@
+Source: ros-indigo-schunk-sdhx
+Section: misc
+Priority: extra
+Maintainer: Thiago de Freitas <tdf@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-schunk-sdhx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-actionlib, ros-indigo-control-msgs, ros-indigo-rospy, ros-indigo-sensor-msgs, ros-indigo-serial, ros-indigo-std-srvs
+Description: The schunk_sdhx package
