@@ -1,0 +1,13 @@
+Source: ros-indigo-schunk-powercube-chain
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-cob-srvs, ros-indigo-control-msgs, ros-indigo-diagnostic-msgs, ros-indigo-libntcan, ros-indigo-libpcan, ros-indigo-roscpp, ros-indigo-schunk-libm5api, ros-indigo-sensor-msgs, ros-indigo-std-msgs, ros-indigo-std-srvs, ros-indigo-trajectory-msgs, ros-indigo-urdf
+Homepage: http://ros.org/wiki/schunk_powercube_chain
+Standards-Version: 3.9.2
+
+Package: ros-indigo-schunk-powercube-chain
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-cob-srvs, ros-indigo-control-msgs, ros-indigo-diagnostic-msgs, ros-indigo-libntcan, ros-indigo-libpcan, ros-indigo-roscpp, ros-indigo-schunk-libm5api, ros-indigo-sensor-msgs, ros-indigo-std-msgs, ros-indigo-std-srvs, ros-indigo-trajectory-msgs, ros-indigo-urdf
+Description: This packages provides a configurable driver of a chain of Schunk powercubes.
+ The powercube chain is configured through parameters. Most users will not directly interact with this package but with the corresponding launch files in other packages, e.g. schunk_bringup, cob_bringup, ...
