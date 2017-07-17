@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <property name="safety_offset" value="0.02"/>
+  <xacro:property name="safety_offset" value="0.02"/>
 
+  <xacro:include filename="$(find schunk_description)/urdf/common.xacro" />
   <xacro:include filename="$(find schunk_description)/urdf/lwa4d/lwa4d.gazebo.xacro"/>
   <xacro:include filename="$(find schunk_description)/urdf/lwa4d/lwa4d.transmission.xacro"/>
-  
+
   <xacro:macro name="axis_config" params="invert">
     <xacro:if value="${invert}">
       <axis xyz="0 0 1" />
@@ -13,17 +14,17 @@
       <axis xyz="0 0 -1" />
     </xacro:unless>
   </xacro:macro>
-  
-  <!-- invert_* is a xacro parameter to be used to adapt the urdf according to your hardware setup. 
-       use invert_*:=true if  motors are inverted in the firmware. 
+
+  <!-- invert_* is a xacro parameter to be used to adapt the urdf according to your hardware setup.
+       use invert_*:=true if  motors are inverted in the firmware.
        use invert_*:=false if motors are not inverted in the firmware.
   -->
   <xacro:macro name="schunk_lwa4d_custom" params="parent name *origin has_podest invert_j1 invert_j2 invert_j3 invert_j4 invert_j5 invert_j6 invert_j7">
-    
+
     <xacro:if value="${has_podest}">
       <!-- joint between base_link and lwa4p_extended_connector_link -->
       <joint name="${name}_podest_joint" type="fixed">
-        <insert_block name="origin" />
+        <xacro:insert_block name="origin" />
         <parent link="${parent}"/>
         <child link="${name}_podest_link"/>
       </joint>
@@ -53,7 +54,7 @@
     <xacro:unless value="${has_podest}">
       <!-- joint between base_link and lwa4p_extended_connector_link -->
       <joint name="${name}_base_joint" type="fixed">
-        <insert_block name="origin" />
+        <xacro:insert_block name="origin" />
         <parent link="${parent}"/>
         <child link="${name}_base_link"/>
       </joint>
@@ -280,10 +281,18 @@
     <xacro:schunk_lwa4d_gazebo name="${name}"/>
     <xacro:schunk_lwa4d_transmission name="${name}"/>
 
+    <!-- ros_control plugin -->
+    <gazebo>
+      <plugin name="ros_control" filename="libhwi_switch_gazebo_ros_control.so">
+        <robotNamespace>${name}</robotNamespace>
+        <filterJointsParam>joint_names</filterJointsParam>
+      </plugin>
+    </gazebo>
+
   </xacro:macro>
-  
-  <!-- use_factory_setings is a xacro parameter to be used to adapt the urdf according to your hardware setup. 
-       use_factory_settings:=true if you have not modified the schunk firmware. 
+
+  <!-- use_factory_setings is a xacro parameter to be used to adapt the urdf according to your hardware setup.
+       use_factory_settings:=true if you have not modified the schunk firmware.
        use_factory_settings:=false if you have modified the schunk firmware to follow DH parameters (you have inverted the PRL+ motors j1-j5)
        if you are using custom firmware settings, use schunk_lwa4d_custom
   -->
