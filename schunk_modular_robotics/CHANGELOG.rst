@@ -2,6 +2,15 @@
 Changelog for package schunk_modular_robotics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.9 (2017-07-17)
+------------------
+* remove package schunk_sdhx
+* manually fix changelog
+* Contributors: ipa-fxm
+
+0.6.8 (2016-10-10)
+------------------
+
 0.6.7 (2016-04-01)
 ------------------
 
@@ -13,21 +22,6 @@ Changelog for package schunk_modular_robotics
 
 0.6.4 (2015-08-25)
 ------------------
-* migration to package format 2
-* remove trailing whitespaces
-* review dependencies
-* Contributors: ipa-fxm
-
-0.6.8 (2016-10-10)
-------------------
-* 0.6.7
-* update changelog
-* 0.6.6
-* update changelog
-* 0.6.5
-* update changelog
-* 0.6.4
-* update changelog
 * migration to package format 2
 * remove trailing whitespaces
 * review dependencies
