@@ -1,3 +1,32 @@
+## schunk_modular_robotics (kinetic) - 0.6.9-0
+
+The packages in the `schunk_modular_robotics` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release schunk_modular_robotics --track kinetic --rosdistro kinetic` on `Wed, 19 Jul 2017 08:22:30 -0000`
+
+These packages were released:
+- `schunk_description`
+- `schunk_libm5api`
+- `schunk_modular_robotics`
+- `schunk_powercube_chain`
+- `schunk_sdh`
+- `schunk_simulated_tactile_sensors`
+
+Version of package(s) in repository `schunk_modular_robotics`:
+
+- upstream repository: https://github.com/ipa320/schunk_modular_robotics.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.6.9-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.5`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## schunk_modular_robotics (indigo) - 0.6.9-0
 
 The packages in the `schunk_modular_robotics` repository were released into the `indigo` distro by running `/usr/bin/bloom-release schunk_modular_robotics --track indigo --rosdistro indigo` on `Mon, 17 Jul 2017 13:35:11 -0000`
