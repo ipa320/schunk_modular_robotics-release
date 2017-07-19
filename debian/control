@@ -1,0 +1,13 @@
+Source: ros-kinetic-schunk-powercube-chain
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), linux-headers-3.16.0-4-all, ros-kinetic-catkin, ros-kinetic-cob-srvs, ros-kinetic-control-msgs, ros-kinetic-diagnostic-msgs, ros-kinetic-libntcan, ros-kinetic-libpcan, ros-kinetic-roscpp, ros-kinetic-schunk-libm5api, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-std-srvs, ros-kinetic-trajectory-msgs, ros-kinetic-urdf
+Homepage: http://ros.org/wiki/schunk_powercube_chain
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-schunk-powercube-chain
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, linux-headers-3.16.0-4-all, ros-kinetic-cob-srvs, ros-kinetic-control-msgs, ros-kinetic-diagnostic-msgs, ros-kinetic-libntcan, ros-kinetic-libpcan, ros-kinetic-roscpp, ros-kinetic-schunk-libm5api, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-std-srvs, ros-kinetic-trajectory-msgs, ros-kinetic-urdf
+Description: This packages provides a configurable driver of a chain of Schunk powercubes.
+ The powercube chain is configured through parameters. Most users will not directly interact with this package but with the corresponding launch files in other packages, e.g. schunk_bringup, cob_bringup, ...
