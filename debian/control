@@ -1,0 +1,13 @@
+Source: ros-kinetic-schunk-libm5api
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-libntcan, ros-kinetic-libpcan
+Homepage: http://ros.org/wiki/schunk_libm5api
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-schunk-libm5api
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-libntcan, ros-kinetic-libpcan
+Description: This package wraps the libm5api to use it as a ros dependency.
+ Original sources from http://www.schunk-modular-robotics.com/fileadmin/user_upload/software/schunk_libm5api_source.zip.
