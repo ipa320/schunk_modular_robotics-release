@@ -1,0 +1,12 @@
+Source: ros-indigo-schunk-sdh
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), dpkg, libboost-all-dev, libusb-dev, ros-indigo-actionlib, ros-indigo-catkin, ros-indigo-cob-srvs, ros-indigo-control-msgs, ros-indigo-diagnostic-msgs, ros-indigo-libntcan, ros-indigo-libpcan, ros-indigo-message-generation, ros-indigo-roscpp, ros-indigo-roslint, ros-indigo-sensor-msgs, ros-indigo-std-msgs, ros-indigo-std-srvs, ros-indigo-trajectory-msgs, ros-indigo-urdf
+Homepage: http://ros.org/wiki/schunk_sdh
+Standards-Version: 3.9.2
+
+Package: ros-indigo-schunk-sdh
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, dpkg, libboost-all-dev, libusb-dev, ros-indigo-actionlib, ros-indigo-cob-srvs, ros-indigo-control-msgs, ros-indigo-diagnostic-msgs, ros-indigo-libntcan, ros-indigo-libpcan, ros-indigo-message-runtime, ros-indigo-roscpp, ros-indigo-sensor-msgs, ros-indigo-std-msgs, ros-indigo-std-srvs, ros-indigo-trajectory-msgs, ros-indigo-urdf
+Description: This package provides an interface for operating the schunk dexterous hand (SDH), including the tactile sensors.
