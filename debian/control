@@ -1,0 +1,13 @@
+Source: ros-kinetic-schunk-description
+Section: misc
+Priority: extra
+Maintainer: Bruno Brito <bfb@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), libgtest-dev, ros-kinetic-catkin
+Homepage: http://ros.org/wiki/schunk_description
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-schunk-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-xacro
+Description: This package contains the description (mechanical, kinematic, visual, etc.) of different schunk components.
+ The files in this package are parsed and used by a variety of other components. Most users will not interact directly with this package.
