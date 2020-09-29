@@ -1,3 +1,32 @@
+## schunk_modular_robotics (noetic) - 0.6.14-1
+
+The packages in the `schunk_modular_robotics` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --rosdistro noetic schunk_modular_robotics` on `Tue, 29 Sep 2020 11:30:34 -0000`
+
+These packages were released:
+- `schunk_description`
+- `schunk_libm5api`
+- `schunk_modular_robotics`
+- `schunk_powercube_chain`
+- `schunk_sdh`
+- `schunk_simulated_tactile_sensors`
+
+Version of package(s) in repository `schunk_modular_robotics`:
+
+- upstream repository: https://github.com/ipa320/schunk_modular_robotics.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.6.14-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.8`
+- catkin_pkg version: `0.4.22`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## schunk_modular_robotics (melodic) - 0.6.14-1
 
 The packages in the `schunk_modular_robotics` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --rosdistro melodic schunk_modular_robotics --edit` on `Thu, 21 Nov 2019 19:23:05 -0000`
