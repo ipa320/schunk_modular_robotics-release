@@ -1,0 +1,13 @@
+Source: ros-noetic-schunk-powercube-chain
+Section: misc
+Priority: optional
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-cob-srvs, ros-noetic-control-msgs, ros-noetic-diagnostic-msgs, ros-noetic-libntcan, ros-noetic-libpcan, ros-noetic-roscpp, ros-noetic-schunk-libm5api, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-std-srvs, ros-noetic-trajectory-msgs, ros-noetic-urdf
+Homepage: http://ros.org/wiki/schunk_powercube_chain
+Standards-Version: 3.9.2
+
+Package: ros-noetic-schunk-powercube-chain
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-cob-srvs, ros-noetic-control-msgs, ros-noetic-diagnostic-msgs, ros-noetic-libntcan, ros-noetic-libpcan, ros-noetic-roscpp, ros-noetic-schunk-libm5api, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-std-srvs, ros-noetic-trajectory-msgs, ros-noetic-urdf
+Description: This packages provides a configurable driver of a chain of Schunk powercubes.
+ The powercube chain is configured through parameters. Most users will not directly interact with this package but with the corresponding launch files in other packages, e.g. schunk_bringup, cob_bringup, ...
