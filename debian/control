@@ -1,0 +1,12 @@
+Source: ros-noetic-schunk-modular-robotics
+Section: misc
+Priority: optional
+Maintainer: Bruno Brito <bfb@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://ros.org/wiki/schunk_modular_robotics
+Standards-Version: 3.9.2
+
+Package: ros-noetic-schunk-modular-robotics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-schunk-description, ros-noetic-schunk-libm5api, ros-noetic-schunk-powercube-chain, ros-noetic-schunk-sdh, ros-noetic-schunk-simulated-tactile-sensors
+Description: This stack includes packages that provide access to the Schunk hardware through ROS messages, services and actions.
